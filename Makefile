@@ -6,7 +6,7 @@ mod:
 	go mod vendor
 
 build:
-	go build -mod=vendor
+	go build -mod=vendor -ldflags="-H windowsgui"
 
 init:
 	# go get fyne.io/fyne/v2
